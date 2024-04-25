@@ -1,0 +1,44 @@
+class Renter:
+    RENTER_ID = None
+    name_last = None
+    name_first = None
+
+    def __init__(self, RENTER_ID, Last, First):
+        self.RENTER_ID = RENTER_ID
+        self.name_last = Last
+        self.name_first = First
+
+    def lookup_renter_info(self):
+        print("Renter name: " +self.name_first+ " " +self.name_last)
+        print("Renter ID: " +self.RENTER_ID)
+
+
+class Employee:
+
+    name_first = None
+    name_last = None
+    EMP_ID = None
+    position = None
+
+    def __init__(self, name_first, name_last, EMP_ID, position):
+        self.name_first = name_first
+        self.name_last = name_last
+        self.EMP_ID = EMP_ID
+        self.position = position
+
+    def lookup_emp_info(self):
+        print("Employee name: " +self.name_first+ " " +self.name_last)
+        print("Employee ID: " +self.EMP_ID)
+        print("Employee position: " +self.position)
+
+
+emp_1 = Employee("John", "Doe", "1", "Admin")
+emp_2 = Employee("Fred", "Holly", "2", "Employee")
+
+
+# print(emp_1.name_first)
+# print(emp_1.name_last)
+# print(emp_1.EMP_ID)
+# print(emp_1.position)
+emp_1.lookup_emp_info()
+
